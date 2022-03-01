@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.home{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navbar{
+    /* height: 55px; */
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: white;
+    padding:0;
+    margin: 0;
+}
+.primary-heading{
+    width: 65%;
+    text-align: center;
+    padding: 10px 0;
+    /* height: 20px; */
+}
+.primary-heading h1 a{
+    text-decoration: none;
+    color: white;
+}
+.primary-heading h1{
+    color: white;
+    margin: 0 5px;
+}
+nav{
+    width: 70%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+nav ul{
+    /* padding: 0; */
+    display: flex;
+    /* justify-content: space-around; */
+}
+ul li{
+    margin: 2px 4px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 14px;
+}
+nav ul li a{
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100%; */
+    margin: 0 0 20px 0;
+    padding: 40px;
+    background-color: antiquewhite;
+}
+.Secondary-heading{
+    
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0;
+
+}
+.Secondary-heading h1{
+    margin: 0 auto;
+}
+.work{
+    width: 85%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    background-color: aquamarine;
+    margin: 0 auto;
+    padding: 30px;
+}
+label{
+    display: block;
+}
+.first{
+    margin: 1em 0;
+}
+.first input{
+    width: 95%;
+    border-radius: 7px;
+    margin: 0 108px 0px 1px;
+}
+.textar{
+    margin: 1em 0;
+}
+#addTxt{
+    border-radius: 12px;
+    padding: 10px;
+}
+button{
+    margin: 0 0 0 10px;
+    height: 36px;
+    width: 101px;
+    border-radius: 40px;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    transition: all 0.5s;
+    box-shadow: 4px 3px 7px rgb(24 24 24);
+
+}
+button:hover{
+
+    box-shadow: 0 0 0;
+
+}
+#clear{
+    margin: 0 0 0 20px;
+}
+
+.btn{
+    height: 33px;
+    width: 94px;
+    margin: 34px 3px 4px 2px
+}
+#notes{
+    padding: 30px;
+    background-color: beige;
+}
+.noteCard{
+    border: 3px solid black;
+    padding: 5px;
+    margin: 5px;
+    width: 14rem;
+    padding: 20px;
+    display: inline-flex;
+    flex-wrap: wrap;
+
+}
+
+
+.card-title{
+    font-family: 'Courier New', Courier, monospace;
+}
+.card-text{
+    font-family: 'Courier New', Courier, monospace;
+}
+@media (max-width:587px){
+    .primary-heading h1{
+        font-size: 1.5rem;
+    }
+    .first input{
+        width: 95%;
+        border-radius: 7px;
+        margin: 0 51px 0px 1px;
+    }
+    form{
+        align-items: flex-start;
+    }
+    #addTxt {
+        width: 14rem;
+    }
+    .container{
+        padding: 10px;
+    }
+}
+@media (max-width:427px){
+    #addTxt {
+        width: 12rem;
+    }
+    .noteCard{
+        margin: 1px -17px;
+        width: 10rem;
+    }
+   
+    .first input{
+        width: 95%;
+        border-radius: 7px;
+        margin: 0 3px 0px 1px;
+    }
+    button {
+        margin: 0 0 0 2px;
+        height: 34px;
+        width: 94px;
+    }
+    form {
+        width: 93%;
+        margin: 0 0 0 -19px;
+    }
+}
+@media (max-width:317px){
+    #addTxt {
+        width: 10rem;
+    }
+    nav ul li a {
+
+        font-size: 0.7em;
+    }
+    #clear{
+        margin: 5px 0 0 11px;
+    }
+    button {
+        margin: 0 0 0 2px;
+        height: 34px;
+        width: 94px;
+        margin: 16px 2px 3px -1px;
+    }
+}
